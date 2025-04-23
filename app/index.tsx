@@ -1,15 +1,15 @@
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
+import {styles} from "../styles/auth.styles";
+
 
 export default function Index() {
   return (
     <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+      style={styles.container} // styles from CSS
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text style={styles.title}>Hello World</Text>
+      <TouchableOpacity></TouchableOpacity>
     </View>
   );
 }
+
